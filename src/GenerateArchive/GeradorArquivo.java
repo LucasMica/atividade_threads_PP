@@ -43,7 +43,7 @@ public class GeradorArquivo {
 
                 if (i == linhaOcultaDoTeste) {
                     linha = String.format(Locale.US, "%d,%s,%.2f,%s",
-                            i, "FUNCIONARIO TESTE", salarioTeste, "CIDADE TESTE");
+                            i, "ROBERTAO", salarioTeste, "NOVO HAMBURGO");
                 }
 
                 else {
@@ -59,7 +59,7 @@ public class GeradorArquivo {
             }
 
             System.out.println("Sucesso! Arquivo gerado em: " + arquivoFinal.getAbsolutePath());
-            System.out.println("O 'FUNCIONARIO TESTE' com salário de R$ " + salarioTeste + " foi escondido na linha " + linhaOcultaDoTeste);
+            System.out.println("O ROBERTAO com salário de R$ " + salarioTeste + " foi escondido na linha " + linhaOcultaDoTeste);
 
         } catch (IOException e) {
             System.err.println("Erro crítico ao tentar gravar o arquivo: " + e.getMessage());
